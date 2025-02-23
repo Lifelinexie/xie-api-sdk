@@ -29,7 +29,7 @@ xieapisdk
 
 ###  快速开始 🚀
 
-**要开始使用 Qi-API-SDK，您需要按照以下简单进行操作:**
+**要开始使用 Xie-API-SDK，您需要按照以下简单进行操作:**
 
 #### 1. 引入依赖坐标
 
@@ -58,7 +58,7 @@ xieapisdk
   - yml
 
     ```yml
-    # Qi-API 配置
+    # Xie-API 配置
     xie:
       api:
         client:
