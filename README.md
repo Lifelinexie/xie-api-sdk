@@ -101,7 +101,7 @@ try {
 - 示例二 ：主动注入
 ```java
 try {
-    XieApiClient client = new XieApiClient("你的 accessKey", "你的 secretKey");
+    	XieApiClient client = new XieApiClient("你的 accessKey", "你的 secretKey");
 	RandomWallpaperRequest randomWallpaperRequest = new RandomWallpaperRequest();
 	RandomWallpaperResponse randomWallpaperResponse = apiService.getRandomWallpaper(client, randomWallpaperRequest);
 	System.out.println(randomWallpaperResponse.getImgurl());
@@ -138,7 +138,7 @@ try {
 - 示例二 ：主动注入
 ```java
 try {
-    XieApiClient client = new XieApiClient("你的 accessKey", "你的 secretKey");
+    	XieApiClient client = new XieApiClient("你的 accessKey", "你的 secretKey");
 	LoveResponse loveResponse = apiService.randomLoveTalk(client);
 	System.out.println(loveResponse.getContent());
 } catch (ApiException e) {
