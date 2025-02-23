@@ -1,5 +1,6 @@
 package com.xwl.apiclientsdk.service;
 
+import cn.hutool.core.util.RandomUtil;
 import cn.hutool.crypto.SecureUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
@@ -185,10 +186,10 @@ public abstract class BaseService implements ApiService {
 	private Map<String, String> getHeaders(String body, XieApiClient xieApiClient) {
 		Map<String, String> hashMap = new HashMap<>(4);
 		hashMap.put("accessKey", xieApiClient.getAccessKey());
-		String encodedBody = SecureUtil.md5(body);
-		hashMap.put("body", encodedBody);
+		hashMap.put("nonce", RandomUtil.randomNumbers(5));
+		hashMap.put("body", body);
 		hashMap.put("timestamp", String.valueOf(System.currentTimeMillis() / 1000));
-		hashMap.put("sign", SignUtils.getSign(encodedBody, xieApiClient.getSecretKey()));
+		hashMap.put("sign", SignUtils.getSign(body, xieApiClient.getSecretKey()));
 		return hashMap;
 	}
 
