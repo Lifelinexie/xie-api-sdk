@@ -41,7 +41,7 @@ public abstract class BaseService implements ApiService {
 	/**
 	 * 网关HOST
 	 */
-	private String gatewayHost = "http://14.103.243.24:8090/api";
+	private String gatewayHost = "https://gateway.lifelinex.icu/api";
 
 	/**
 	 * 检查配置
