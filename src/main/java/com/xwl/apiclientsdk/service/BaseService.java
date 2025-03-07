@@ -190,6 +190,7 @@ public abstract class BaseService implements ApiService {
 		hashMap.put("body", body);
 		hashMap.put("timestamp", String.valueOf(System.currentTimeMillis() / 1000));
 		hashMap.put("sign", SignUtils.getSign(body, xieApiClient.getSecretKey()));
+		System.out.println("timestamp:" + hashMap.get("timestamp"));
 		return hashMap;
 	}
 

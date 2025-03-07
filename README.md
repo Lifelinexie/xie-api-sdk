@@ -41,7 +41,7 @@ xieapisdk
 </dependency>   
 ```
 
-#### 2. 前往[xie-API 接口开放平台](http://14.103.243.24/) 获取开发者密钥对
+#### 2. 前往[xie-API 接口开放平台](https://api.lifelinex.icu/) 获取开发者密钥对
 
 #### 3. 初始化客户端QiApiClient对象
 
